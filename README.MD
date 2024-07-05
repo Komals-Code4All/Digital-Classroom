@@ -12,13 +12,14 @@ The subject's main <em>index.html<em> page is made up of a nav-bar and an iFrame
 The diagram below may help explain this structure.
 <pre>       
                                         --------------
-Top Level                               : index.html :
-                                        --------------
-                                                :
+Top Level                               : index.html : -->  ----------------- 
+                                        --------------      : asset folder  : --> CSS folder
+                                               :            -----------------     Images folder
+                                               :
                                 _________________________________
-                                :                :                :
+                                :              :                :
 Subject Level               ---------       ---------       ----------
-                            : HTML  :       :  JS   :       : PYTHON :
+(folders)                   : HTML  :       :  JS   :       : PYTHON :
                             ---------       ---------       ----------
                                 :
                                 :
