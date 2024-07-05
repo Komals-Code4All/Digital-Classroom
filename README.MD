@@ -3,27 +3,36 @@
 The idea here is to have a general website for displaying teaching materials.
 <hr>
 
-The top level <em>index.html</em> is the portal to all 'SUBJECTS' to be taught. For example, subject could include HTML, CSS, JavaScript and Python.
+The <strong>TOP LEVEL <strong> index.html is the gateway to all different <em>subjects</em>. For example, subjects could include HTML, JavaScript and Python.
 
-Each subject has its own separate website, containing another high-level <em>index.html</em> and a folder contain HTML files of individual chapters. The subject's index.html contains a nav-bar and an iFrame. The nav-bar gives links to the individual chapters. When clicked the chapter html will appear in the iFrame. 
+At the <strong>SUBJECT LEVEL</strong> each subject is a separate website, in its own folder, with its own index.html and assets folder. In addition, there is a folder for all the individual lessons, held in individual HTML files.
 
+The subject's main <em>index.html<em> page is made up of a nav-bar and an iFrame. The nav-bar has links to the individual lessons. When clicked, the lesson will will appear in the iFrame.
 
-
+The diagram below may help explain this structure.
 <pre>       
-
-Top Level                   INDEX.HTML
-                            ==========
-
-Subject Level           ---------       ---------       ----------
-                        : HTML  :       :  CSS  :       : PYTHON :
-                        ---------       ---------       ----------
-
-
-
-Chapter Level   --------------         
-                : Intro.html :    
-                -------------       
-
-
-
+                                        --------------
+Top Level                               : index.html :
+                                        --------------
+                                                :
+                                _________________________________
+                                :                :                :
+Subject Level               ---------       ---------       ----------
+                            : HTML  :       :  JS   :       : PYTHON :
+                            ---------       ---------       ----------
+                                :
+                                :
+Chapter Level   ---------------------------------           -----------------------------
+                : HTML Lessons' Folder          :           : Python Lessons' Folder    :
+                :-------------------------------:           :---------------------------:
+                : 00_HTML_Intro.html            :           : 00_PYT_Intro.html         : 
+                : 10_HTML_InputOutput.html      :           : 10_PYT_InputOutput.html   :
+                : 20_HTML_Variables.html        :           : 20_PYT_Variables.html     : 
+                : 30_HTML_DataStructures.html   :           : 30_PYT_DataStructs.html   : 
+                : 32_HTML_Arrays.html           :           : 32_PYT_Arrays.html        :
+                : 34_HTML_Objects.html          :           : ... etc                   :
+                : 40_HTML_IF_THEN.html          :           -----------------------------
+                : 50_HTML_Loops.html            :
+                : ....etc                       :
+                ---------------------------------
 </pre>
