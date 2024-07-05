@@ -88,6 +88,8 @@ a:hover {
 .classLessons {
   display: inline-block;
   text-align: center;
+  width: 33%;
+  
 }
 
 .classLessons > img {
