@@ -1,58 +1,62 @@
+
+
 :root {
-    --bgColor : snow;
-  --txtColor : black;
-  }
-  
-  
-  * {
-    background-color: var(--bgColor);
-    color : var(--txtColor);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-  
-
-
-#container {
-        display: flex;
-         height: auto;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    border : 4px solid black;
-    }
-
-#flex-container > div {
-       margin: 10px;
-        padding: 10px;
-        flex-basis: auto;
-        border : 4px solid black;
-    }
-
-
-
-#leftSide {
-    height: 100%;
-    width: 25%;
-    border: 4px solid blue;
+  --bgColorMain : steelblue;
+  --bgColorSub : darkslateblue;
 }
 
-#rightSide {
-    height: 100%;
-    width: 75%;
-    border: 4px solid greenyellow;
-} 
+* {
+  top: 0;
+  left: 0px;
+  vertical-align: top;
+  background-color: var(--bgColorMain);
+  color: white;
+}
 
 
-iframe {
-    height: 100%;
+
+body {
+    background-color: ghostwhite;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1 {
+    color: slategray;
+  }
+  
+  /* Style <pre> with a slightly larger font size */
+  pre {
+    font-size: large;
+  }
+  
+  /* Style <code> with a background color and larger font size */
+  code {
+    background-color: lightyellow;
+    font-size: larger;
+  }
+  
+  /* style the DIV that shows the HTML code */
+  .coding {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(191, 238, 222);
+  }
+  
+  /* style the DIV that shows the resulting output from the HTML code */
+  .result {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(191, 238, 222);
+  }
+  
+  /* style the Heading and Nav bar to stay at the top of the page */
+  #fixedNav {
+    text-align: left;
+    border: 1px solid blue;
     width: 100%;
-   border: 2px solid red;   
-}
-
-/* section {
-    background-color: var(--bgColor)
-} */
-
-/* article {
-    background-color: pink;
-} */
+    padding: 1rem;
+    position: fixed;
+    top: 0px;
+    left: 1px;
+    background-color: palevioletred;
+  }
