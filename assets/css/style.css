@@ -1,4 +1,9 @@
 
+/*  ------------------------------------------------------------------------
+    
+    ------------------------------------------------------------------------ 
+*/ 
+
 :root {
   --bgColor : snow;
   --txtColor : slategray;
@@ -6,6 +11,25 @@
   --txtColorHi : white;
 
 }
+
+* {
+  padding: 0;
+}
+
+/*  ------------------------------------------------------------------------
+    Standard webpage section styling 
+    ------------------------------------------------------------------------ 
+*/ 
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -19,12 +43,17 @@ header {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
 
-/* Hero image */
+
+/*  ------------------------------------------------------------------------
+    Hero Image section 
+    ------------------------------------------------------------------------ 
+*/ 
+
 #hero_image {
   height: 600px;
   width: 100%;
@@ -51,7 +80,13 @@ footer {
   color: var(--txtColorHi);
 }
 
-/* NAV bar */
+
+/*  ------------------------------------------------------------------------
+    Navigation bar
+    ------------------------------------------------------------------------ 
+*/ 
+
+
 li {
  width: fit-content;
  padding-right: 5px;
@@ -76,42 +111,71 @@ a:hover {
   color: var(--bgColor);
  }
 
-/* Container for ALL the different subjects */
-.classSubjects {
-  height: 200px;
-  width: 200px;
-  background-color: aquamarine;
-  
+/*  ------------------------------------------------------------------------
+    Style the floating cards representing each subject 
+    ------------------------------------------------------------------------ 
+*/ 
+
+/* Four columns per row */
+.column {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 5px;
 }
 
-/* section for each subjects */
-.classLessons {
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+  .card > img {
+    display : none;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
   display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
   text-align: center;
-  width: 33%;
-  
+  cursor: pointer;
+  width: 100%;
 }
 
-.classLessons > img {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+.button:hover {
+  background-color: #555;
 }
+/*  ------------------------------------------------------------------------
+    Standard webpage section styling 
+    ------------------------------------------------------------------------ 
+*/ 
 
-/* Hero image's overlaid text */
-.classLessons_text {
-  /* Final rgba value sets the opacity so it is semi-transparent */
-  background-color: rgba(129, 118, 164, 0.7);
-  font-size: 130%;
-  position: absolute;
-  bottom: 15%;
-  right: 5%;
-  width: 40%;
-  min-height: 200px;
-  padding-top: 40px;     
-  padding-left: 10px;
-}
 
-.classLessons_text > h3 {
-  color: var(--txtColorHi);
-}
