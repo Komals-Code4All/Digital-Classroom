@@ -3,7 +3,7 @@
 The idea here is to have a general website for displaying teaching materials.
 <hr>
 
-:warning    Site Under Construction 
+:warning:    Site Under Construction 
 
 <img src="assets/images/code4all_screen1.PNG">
 
