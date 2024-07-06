@@ -3,6 +3,11 @@
 The idea here is to have a general website for displaying teaching materials.
 <hr>
 
+:warning    Site Under Construction 
+
+<img src="assets/images/code4all_screen1.PNG">
+
+
 The <strong>TOP LEVEL </strong> index.html is the gateway to all different <em>subjects</em>. For example, subjects could include HTML, JavaScript and Python.
 
 At the <strong>SUBJECT LEVEL</strong> each subject is a separate website, in its own folder, with its own index.html and assets folder. In addition, there is a folder for all the individual lessons, held in individual HTML files.
